@@ -1,7 +1,9 @@
 package usuarios;
+import interfaces.Reportable;
+import interfaces.Comentable;
 
-//implements Comentable, Reportable
-public class Pagina extends Usuario {
+public class Pagina extends Usuario implements Comentable, Reportable
+ {
 
 	private String razonSocial;
 	private int cantidadSeguidores;
@@ -46,5 +48,16 @@ public class Pagina extends Usuario {
 		this.categoria = categoria;
 	}
 
-	// aca van los metodos de Comentable y Reportable
+	@Override
+	public void reportar(String motivo) {
+		System.out.println("Reporte recibido por "+ motivo);
+
+	}
+
+	@Override
+	public void comentar(String autor, String texto) {
+		System.out.println("[COMENT EN POST #1] "+autor+": "+texto);
+		
+	}
+
 }

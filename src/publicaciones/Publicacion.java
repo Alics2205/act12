@@ -1,5 +1,8 @@
 package publicaciones;
 
+import interfaces.Reportable;
+import interfaces.Comentable;
+
 public abstract class Publicacion {
 
 	private int id;
