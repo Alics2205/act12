@@ -31,7 +31,7 @@ public class Story extends Publicacion  implements Reportable {
 
 	@Override
 	public void reportar(String motivo) {
-		System.out.println("Reporte recibido por "+ motivo);
+		System.out.println("Reporte recibido en "+getAutor + " por "+ motivo);
 	}
 	
 
