@@ -42,12 +42,12 @@ public class Cuenta extends Usuario implements Reportable, Comentable {
 
 	@Override
 	public void reportar(String motivo) {
-		System.out.println("porque si");
+		System.out.println("Reporte recibido en " + getUsername() + " por " + motivo);
 	}
 
 	@Override
 	public void comentar(String autor, String texto) {
-		System.out.println("@yo" + "el");
+		System.out.println("[COMENT EN MURO DE @" + getUsername() + "] " + autor + ":" + texto );
 
 	}
 }
