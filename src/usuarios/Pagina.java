@@ -50,13 +50,13 @@ public class Pagina extends Usuario implements Comentable, Reportable
 
 	@Override
 	public void reportar(String motivo) {
-		System.out.println("Reporte recibido por "+ motivo);
+		System.out.println("Reporte recibido en " + getUsername() + " por "+ motivo);
 
 	}
 
 	@Override
 	public void comentar(String autor, String texto) {
-		System.out.println("[COMENT EN POST #1] "+autor+": "+texto);
+		System.out.println("[COMENT EN POST#" + getId() + "] "+ "autor+": "+ texto);
 		
 	}
 
