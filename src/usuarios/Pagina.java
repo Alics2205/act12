@@ -56,7 +56,7 @@ public class Pagina extends Usuario implements Comentable, Reportable
 
 	@Override
 	public void comentar(String autor, String texto) {
-		System.out.println("[COMENT EN POST#" + getId() + "] "+ "autor+": "+ texto);
+		System.out.println("[COMENT EN POST#" + getUsername() +  "] "+ autor +" : "+ texto);
 		
 	}
 
